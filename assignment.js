@@ -2,15 +2,21 @@ function cashOut( money ) {
     return money/100*1.75;
 }
 
-console.log(cashOut(1000))
+cashOut(2000);
+console.log(cashOut(1000));
 
 function  validEmail( email ) {
-    // You have to write your code here
+    return email;
 }
 
+console.log(validEmail("rabbanictgbd@gmail.com"))
+
 function  electionResult( votes ) {
-    // You have to write your code here
+    return votes
 }
+
+electionResult(["mango"],["mango"],["banana"],["naVote"],["banana"]);
+console.log(electionResult(["mango"],["mango"],["banana"],["naVote"],["banana"]));
 
 function  isBestFriend( f1 , f2 ) {
     // You have to write your code here
