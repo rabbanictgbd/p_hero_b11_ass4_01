@@ -33,7 +33,7 @@ console.log("email", validEmail("rabbanictgbdgmail"))
 const items = ["mango", "banana", "naVote"];
 function electionResult(votes) {
     const items = ["mango", "banana", "naVote"];
-    if (typeof (votes) === "string" ) {
+    if (Array.isArray(votes)) {
         const mango = votes[0];
         const banana = votes[1];
         const naVote = votes[2];
