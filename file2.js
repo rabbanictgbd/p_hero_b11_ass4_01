@@ -72,11 +72,43 @@ console.log(electionResult(["mango","mango", "banana","banana", "naVote"]));
 console.log(electionResult(["mango","mango", "banana", "naVote"]));
 console.log(electionResult(["mango", "banana","banana", "naVote"]));
 console.log(electionResult([]));
+console.log(electionResult( "banana", "banana"));
 // console.log(vote);
-
-function isBestFriend(f1, f2) {
-    // You have to write your code here
+const friend1={
+    name: "Abdul Kader",
+    roll: 10,
+    bestFriend: 1,
 }
+
+const friend2={
+    name: "Rabbani",
+    roll: 20,
+    bestFriend: 2,
+}
+
+function isBestFriend(f1,f2) {
+    const friend1={
+        name: "Abdul Kader",
+        roll: 10,
+        bestFriend: 1,
+    }
+   
+    const friend2={
+        name: "Rabbani",
+        roll: 20,
+        bestFriend: 2,
+    }
+   
+    for(const info1 in f1){
+        console.log(info1, f1[info1])
+    }
+    for(const info2 in f2){
+        console.log(info2, f2[info2])
+    }
+    
+}
+
+console.log(isBestFriend(friend1,friend2))
 
 function calculateWatchTime(times) {
     // You have to write your code here
