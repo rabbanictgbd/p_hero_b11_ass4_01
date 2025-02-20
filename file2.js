@@ -51,8 +51,8 @@ function electionResult(votes) {
             
             return  [mangoCounter, "Mango"]
         } else if (bananaCounter>mangoCounter){
-            return [bananaCounter, "Manana"]
-        } return [bananaCounter, mangoCounter, "Drew"]
+            return [bananaCounter, "Banana"]
+        } return [bananaCounter, mangoCounter, "Draw"]
     }
 
     
@@ -69,6 +69,9 @@ function electionResult(votes) {
 // console.log(["mango", "banana", "naVote"]);
 console.log("...........................")
 console.log(electionResult(["mango","mango", "banana","banana", "naVote"]));
+console.log(electionResult(["mango","mango", "banana", "naVote"]));
+console.log(electionResult(["mango", "banana","banana", "naVote"]));
+console.log(electionResult([]));
 // console.log(vote);
 
 function isBestFriend(f1, f2) {
