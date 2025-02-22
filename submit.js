@@ -117,8 +117,10 @@ function calculateWatchTime(times) {
             
 
             let minute= (totalSecond-((hour*3600)+leftminute))/60
+
+            let second= totalSecond-((hour*3600)+(minute*60))
             
-            return ["Hour:", hour, "Minute:", minute, "Second:", leftHour]
+            return ["hour:", hour, "minute:", minute, "second:", second]
         
     } return "invalid"
     
@@ -128,3 +130,8 @@ function calculateWatchTime(times) {
 
 
 console.log(calculateWatchTime([10,20,40,3600,3600,70,3600,70]))
+console.log(calculateWatchTime([10]))
+console.log(calculateWatchTime([3,70]))
+console.log(calculateWatchTime([]))
+console.log(calculateWatchTime(20))
+console.log(calculateWatchTime("s"))
