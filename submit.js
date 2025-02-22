@@ -8,7 +8,16 @@ function cashOut(money) {
 }
 
 
+console.log(("cash out charge ......................................"));
 console.log(cashOut(1000));
+console.log(cashOut(-2000));
+console.log(cashOut(0));
+console.log(cashOut(-0));
+console.log(cashOut(-1));
+console.log(cashOut("100"));
+// question? "100"
+console.log(cashOut("-100"));
+console.log(cashOut("cash"));
 
 function validEmail(email) {
     if (email.startsWith("-") || email.startsWith(".") || email.startsWith("+") || email.startsWith("_") || email.startsWith("@") || email.includes(" ") || !email.includes("@") || !email.endsWith(".com")) {
@@ -19,6 +28,7 @@ function validEmail(email) {
 
 }
 
+console.log("email............................................")
 console.log("email", validEmail("rabbanictgbd@gmail.com"))
 console.log("email", validEmail(".rabbanictgbd@gmail.com"))
 console.log("email", validEmail("+rabbanictgbd@gmail.com"))
@@ -27,6 +37,9 @@ console.log("email", validEmail("_rabbanictgbd@gmail.com"))
 console.log("email", validEmail("@rabbanictgbd@gmail.com"))
 console.log("email", validEmail("rabbanictgbdgmail.com"))
 console.log("email", validEmail("rabbanictgbdgmail"))
+
+// question? console.log("email", validEmail(true))
+// question? console.log("email", validEmail(100))
 
 function electionResult(votes) {
     
@@ -63,12 +76,16 @@ function electionResult(votes) {
 
 
 
-console.log("...........................")
+console.log("vote .................................................")
 console.log(electionResult(["mango","mango", "banana","banana", "naVote"]));
 console.log(electionResult(["mango","mango", "banana", "naVote"]));
 console.log(electionResult(["mango", "banana","banana", "naVote"]));
 console.log(electionResult([]));
 console.log(electionResult( "banana", "banana"));
+console.log(electionResult( 100, 20));
+console.log(electionResult( [100, 20]));
+console.log(electionResult( [100, 100]));
+console.log(electionResult( [true, true]));
 
 
 
@@ -94,7 +111,23 @@ const friend2={
     roll: 5,
     bestFriend: 2,
 }
+const friend3={
+    name: "Rabbani",
+    roll: 5,
+    bestFriend: 3,
+}
+const friend4={
+    name: "Rabbani",
+    roll: "ten",
+    bestFriend: 3,
+}
+
+console.log("friend........................................................")
 console.log(isBestFriend(friend1,friend2))
+console.log(isBestFriend(friend1,friend3))
+// question? string invalid
+console.log(isBestFriend(friend1,friend4))
+console.log(isBestFriend(friend1,"kashem have no fried"))
 
 function calculateWatchTime(times) {
     let totalSecond= 0
@@ -129,9 +162,12 @@ function calculateWatchTime(times) {
 
 
 
+console.log("time.................................................")
 console.log(calculateWatchTime([10,20,40,3600,3600,70,3600,70]))
 console.log(calculateWatchTime([10]))
 console.log(calculateWatchTime([3,70]))
 console.log(calculateWatchTime([]))
 console.log(calculateWatchTime(20))
 console.log(calculateWatchTime("s"))
+// question? string invalid
+console.log(calculateWatchTime([3,"70"]))
