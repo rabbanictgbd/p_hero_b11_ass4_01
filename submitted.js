@@ -35,7 +35,7 @@ function electionResult(votes) {
         }
         if (mangoCounter > bananaCounter) {
 
-            return  "Mango"
+            return "Mango"
         } else if (bananaCounter > mangoCounter) {
             return "Banana"
         } return "Draw"
@@ -76,22 +76,22 @@ function calculateWatchTime(times) {
             totalSecond += time
         }
 
-            let leftHour = totalSecond % 3600
+        let leftHour = totalSecond % 3600
 
-            let hour = (totalSecond - leftHour) / 3600
-
-
-
-            let leftminute = leftHour % 60
+        let hour = (totalSecond - leftHour) / 3600
 
 
-            let minute = (totalSecond - ((hour * 3600) + leftminute)) / 60
 
-            let second = totalSecond - ((hour * 3600) + (minute * 60))
+        let leftminute = leftHour % 60
 
-           
 
-         return { hour: hour, minute: minute, second: second }
+        let minute = (totalSecond - ((hour * 3600) + leftminute)) / 60
+
+        let second = totalSecond - ((hour * 3600) + (minute * 60))
+
+
+
+        return { hour: hour, minute: minute, second: second }
 
     } return "invalid"
 
